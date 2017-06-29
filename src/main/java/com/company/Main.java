@@ -1,3 +1,7 @@
+package com.company;
+
+import com.company.Cinema;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
