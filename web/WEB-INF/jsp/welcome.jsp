@@ -1,25 +1,30 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html>
 <head>
-    <title>Spring MVC Tutorial by Crunchify - Hello World Spring MVC
-        Example</title>
+    <title>Spring MVC </title>
     <style type="text/css">
         body {
             background-image: url('https://crunchify.com/bg.png');
         }
     </style>
 </head>
-<body>${message}
+<body>
 
+<c:forEach items="${supplierNames}" var="name">
+    ${name}<br>
+</c:forEach>
+
+
+<c:forEach items="${requestScope.supplierNames}" var="item">
+    ${item}<br>
+</c:forEach>
+
+${supplierNames}
 <br>
 <br>
-<div style="font-family: verdana; padding: 10px; border-radius: 10px; font-size: 12px; text-align:center;">
 
-    Spring MCV Tutorial by <a href="https://crunchify.com">Crunchify</a>.
-    Click <a
-        href="https://crunchify.com/category/java-tutorials/"
-        target="_blank">here</a> for all Java and <a
-        href='https://crunchify.com/category/spring-mvc/' target='_blank'>here</a>
-    for all Spring MVC, Web Development examples.<br>
-</div>
+
 </body>
 </html>

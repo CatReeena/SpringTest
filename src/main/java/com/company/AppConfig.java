@@ -18,7 +18,7 @@ public class AppConfig {
     }
 
     @Bean
-    public CinemaDAO returnDao()
+    public CinemaDAOHibernate returnDao()
     {
         return new CinemaDAOHibernate();
     }
