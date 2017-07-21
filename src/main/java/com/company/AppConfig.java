@@ -12,12 +12,12 @@ import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 @ComponentScan
 public class AppConfig {
 
-//    @Bean
-//    public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
-//        LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
-//        em.setPersistenceUnitName("Local");
-//        return em;
-//    }
+    @Bean
+    public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
+        LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
+        em.setPersistenceUnitName("Local");
+        return em;
+    }
 
     @Bean
     public CinemaDAOHibernate returnDao()
