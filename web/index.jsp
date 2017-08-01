@@ -16,6 +16,8 @@
   <h3>
     <a href="api/test">Click here to See Welcome Message... </a>(to
     check Spring MVC Controller... @RequestMapping("/test"))
+    <a href="api/testInjection">Click here to cinema list... </a>(to
+    check Spring MVC Controller... @RequestMapping("/testInjection"))
   </h3>
 </div>
 </body>

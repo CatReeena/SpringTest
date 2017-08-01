@@ -8,7 +8,7 @@ import java.util.UUID;
 /**
  * Created by Shera on 06.07.2017.
  */
-public class CinemaDAOHibernate {
+public class CinemaDAOHibernate implements CinemaDAO {
 
     @PersistenceContext
     private EntityManager em;

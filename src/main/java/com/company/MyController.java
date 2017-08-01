@@ -19,7 +19,7 @@ import java.util.List;
 public class MyController {
 
     @Autowired
-    CinemaDAOHibernate cinemaDAOHibernate;
+    CinemaDAO cinemaDAO;
 
     @GetMapping("/test")
     public String index(Model m) {
@@ -35,13 +35,9 @@ public class MyController {
     @GetMapping("/testInjection")
     public String testInjection(Model m) {
 
-
-        List<String> supplierNames = Arrays.asList("sup1", "sup2", "sup3");
-
-
-        m.addAttribute("supplierNames", supplierNames);
+        List<Cinema> cinemas = cinemaDAO.findAll();
+        m.addAttribute("cinemas", cinemas);
         return "welcome";
-        ///test
     }
 }
 

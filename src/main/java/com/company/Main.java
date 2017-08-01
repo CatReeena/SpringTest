@@ -13,7 +13,7 @@ public class Main {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("Local");
         EntityManager entityManager = emf.createEntityManager();
         entityManager.getTransaction().begin();
-        entityManager.persist(new Cinema("Помни"));
+        entityManager.persist(new Cinema("Помни2"));
         entityManager.getTransaction().commit();
         entityManager.close();
         emf.close();

@@ -22,6 +22,20 @@
 </c:forEach>
 
 ${supplierNames}
+
+
+
+
+<c:forEach items="${cinemas}" var="cinema">
+
+    <tr>
+        <td>${cinema.name}</td>
+        <td>${cinema.name}</td>
+        <td><button class="delete" data-value="${cinema.name}">Remove</button></td>
+    </tr>
+
+</c:forEach>
+
 <br>
 <br>
 
